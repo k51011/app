@@ -11,7 +11,13 @@
 |
 */
 
-Route::get('/{any?}', function() {
-    return view('index');
+
+Auth::routes();
+Route::middleware('auth')->group(function(){
+    Route::post('/photos', 'PhotoController@create')->name('photo.create');
+    Route::get('/{any}', function() {
+        return view('index');
+    }
+    )->where('any', '.*');
 }
 );
