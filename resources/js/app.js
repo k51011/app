@@ -3,10 +3,16 @@ import Vue from 'vue'
 import router from './router'
 // ルートコンポーネントをインポートする
 import App from './App.vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import Navbar from './components/Navbar'
+
+Vue.use(VueAxios, axios)
+Vue.component('navbar-component',Navbar)
+
 
 new Vue({
     el: '#app',
     router, // ルーティングの定義を読み込む
-    components: { App }, // ルートコンポーネントの使用を宣言する
-    template: '<App />' // ルートコンポーネントを描画する
+    
 })

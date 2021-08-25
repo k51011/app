@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="https://hypertext-candy.s3-ap-northeast-1.amazonaws.com/posts/vue-laravel-tutorial/app.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <navbar-component></navbar-component>
+    <router-view></router-view>  
+    
+  </div>
 </body>
 </html>
