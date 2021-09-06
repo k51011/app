@@ -17,4 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// 写真投稿
+Route::get('/photos', 'PhotoController@index')->name('photo.index');

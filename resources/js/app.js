@@ -14,5 +14,7 @@ Vue.component('navbar-component',Navbar)
 new Vue({
     el: '#app',
     router, // ルーティングの定義を読み込む
+    components: { App },
+    template: '<App />'
     
 })
