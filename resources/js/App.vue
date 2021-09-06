@@ -51,11 +51,11 @@ export default {
     Navbar,
     // Footer
   },
-  computed: {
-    errorCode () {
-      return this.$store.state.error.code
-    }
-  },
+  // computed: {
+  //   errorCode () {
+  //     return this.$store.state.error.code
+  //   }
+  // },
 //   watch: {
 //     errorCode: {
 //       handler (val) {

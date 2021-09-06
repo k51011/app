@@ -80,7 +80,6 @@ export default {
       this.loading = true
       const formData = new FormData()
       formData.append('photo', this.photo)
-      /*global axios*/
       const response = await this.axios.post('/photos', formData)
       this.loading = false
     //   /*global UNPROCESSABLE_ENTITY*/
@@ -105,5 +104,3 @@ export default {
   }
 }
 </script>
-
-
