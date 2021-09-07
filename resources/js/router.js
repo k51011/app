@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 // ページコンポーネントをインポートする
 import PhotoList from './pages/PhotoList.vue'
 import Login from './pages/Login.vue'
+import PhotoDetail from './pages/PhotoDetail.vue'
 
 // VueRouterプラグインを使用する
 // これによって<RouterView />コンポーネントなどを使うことができる
@@ -22,6 +23,12 @@ const routes = [
     {
         path: '/login',
         component: Login
+    },
+    
+    {
+        path: '/photos/:id',
+        component: PhotoDetail,
+        props: true
     }
     
     
